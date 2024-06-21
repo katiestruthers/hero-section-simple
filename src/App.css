@@ -1,17 +1,3 @@
-.credits {
-  color: #777;
-  position: fixed;
-  bottom: 24px;
-  left: 24px;
-  font-size: 11px;
-  text-align: center;
-}
-
-.credits a {
-  color: #000;
-  font-weight: bold;
-}
-
 .blue-button:focus, .white-button:focus {
   outline: 4px solid #E9EAFD;
   border-radius: 4px;
@@ -38,30 +24,41 @@
   gap: 48px;
 }
 
+.hero__message {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hero header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 16px;
+}
+
 .hero img {
-  width: 319px;
   padding: 32px 0px;
 }
 
-@media screen and (375px < width < 1280px) {
+@media screen and (width > 768px) {
+  .hero__message {
+    gap: 64px;
+  }
+
   .hero {
     border-radius: 6px;
-  }
-  
-  .hero img {
-    width: 704px;
   }
 }
 
 @media screen and (width >= 1280px) {
   .hero {
     flex-direction: row;
-    border-radius: 6px;
     gap: 32px;
     padding: 96px;
-  }
-
-  .hero img {
-    width: 696px;
   }
 }
