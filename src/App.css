@@ -1,3 +1,7 @@
+button {
+  padding: 12px 20px;
+}
+
 .blue-button:focus, .white-button:focus {
   outline: 4px solid #E9EAFD;
   border-radius: 4px;
@@ -56,6 +60,10 @@
     width: 580px;
     padding: 0px;
   }
+
+  button {
+    padding: 16px 24px;
+  }
 }
 
 @media screen and (768px < width < 1280px) {
@@ -67,6 +75,14 @@
   .hero img {
     width: 580px;
     padding: 0px;
+  }
+
+  .hero__buttons {
+    gap: 32px;
+  }
+
+  button {
+    padding: 16px 24px;
   }
 }
 
@@ -83,5 +99,13 @@
 
   .hero__message {
     gap: 64px;
+  }
+
+  .hero__buttons {
+    gap: 32px;
+  }
+
+  button {
+    padding: 16px 24px;
   }
 }
