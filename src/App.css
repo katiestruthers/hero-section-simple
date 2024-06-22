@@ -42,16 +42,31 @@
 }
 
 .hero img {
+  width: 319px;
   padding: 32px 0px;
 }
 
-@media screen and (width > 768px) {
-  .hero__message {
-    gap: 64px;
+@media screen and (375px < width <= 768px) {
+  .hero {
+    gap: 32px;
+    padding: 64px 16px;
   }
 
+  .hero img {
+    width: 580px;
+    padding: 0px;
+  }
+}
+
+@media screen and (768px < width < 1280px) {
   .hero {
-    border-radius: 6px;
+    gap: 32px;
+    padding: 64px 16px;
+  }
+
+  .hero img {
+    width: 580px;
+    padding: 0px;
   }
 }
 
@@ -60,5 +75,13 @@
     flex-direction: row;
     gap: 32px;
     padding: 96px;
+  }
+
+  .hero img {
+    width: 694px;
+  }
+
+  .hero__message {
+    gap: 64px;
   }
 }
